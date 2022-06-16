@@ -1,0 +1,48 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  .info {
+    flex-grow: 1;
+    font-size: _rem(16);
+    color: #000000;
+
+    &--deleted {
+      .title {
+        text-decoration: line-through;
+      }
+    }
+
+    &--related {
+      .descr {
+        padding-left: _rem(11);
+      }
+    }
+  }
+
+  .topPart {
+    display: flex;
+  }
+
+  .screamer {
+    margin-right: _rem(5);
+    font-size: _em(16, 16);
+    font-weight: bold;
+    line-height: (20/16);
+    color: #cb212a;
+  }
+
+  .title {
+    font-size: _em(16, 16);
+    line-height: (20/16);
+    font-weight: bold;
+    color: inherit;
+  }
+
+  .descr {
+    @include multi-ellipsis(2, (16/12));
+    margin: _rem(3) 0 0;
+    font-size: _em(12, 16);
+    line-height: (16/12);
+    opacity: 0.9;
+  }
+}

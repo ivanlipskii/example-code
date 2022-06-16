@@ -1,0 +1,191 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  .table {
+    border-bottom: _rem(1) solid #d5dae0;
+
+    &InnerElement {
+      overflow: auto;
+    }
+  }
+
+  .row {
+    display: flex;
+    border-bottom: _rem(1) solid #d5dae0;
+
+    &.start {
+      .cell {
+        &:last-child {
+          &::before {
+            content: '';
+            display: block;
+            width: _rem(1);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: calc(100% + 1px);
+            background-color: #d5dae099;
+          }
+          &::after {
+            content: '';
+            display: block;
+            width: _rem(1);
+            height: 100%;
+            top: 0;
+            position: absolute;
+            right: calc(100% + 2px);
+            background-color: #d5dae04d;
+          }
+        }
+      }
+    }
+
+    &.middle {
+      .cell {
+        &:first-child {
+          &::before {
+            content: '';
+            display: block;
+            width: _rem(1);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: calc(100% + 1px);
+            background-color: #d5dae099;
+          }
+          &::after {
+            content: '';
+            display: block;
+            width: _rem(1);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: calc(100% + 2px);
+            background-color: #d5dae04d;
+          }
+        }
+        &:last-child {
+          &::before {
+            content: '';
+            display: block;
+            width: _rem(1);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: calc(100% + 1px);
+            background-color: #d5dae099;
+          }
+          &::after {
+            content: '';
+            display: block;
+            width: _rem(1);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: calc(100% + 2px);
+            background-color: #d5dae04d;
+          }
+        }
+      }
+    }
+
+    &.end {
+      .cell {
+        &:first-child {
+          &::before {
+            content: '';
+            display: block;
+            width: _rem(1);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: calc(100% + 1px);
+            background-color: #d5dae099;
+          }
+          &::after {
+            content: '';
+            display: block;
+            width: _rem(1);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: calc(100% + 2px);
+            background-color: #d5dae04d;
+          }
+        }
+      }
+    }
+  }
+
+  .lastRow {
+    border-bottom: none;
+  }
+
+  .header {
+    height: _rem(28);
+    border-top: _rem(1) solid #d5dae0;
+    background-color: #f6f7f8;
+    width: max-content;
+
+    .cell {
+      background-color: #f6f7f8;
+    }
+  }
+
+  .cell {
+    display: flex;
+    flex-shrink: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-left: _rem(1) solid #d5dae0;
+    background-color: #fff;
+
+    &:first-child {
+      position: sticky;
+      border-left: none;
+      left: 0;
+      border-right: _rem(1) solid #d5dae0;
+    }
+
+    &:nth-child(2) {
+      border-left: none;
+    }
+
+    &:last-child,
+    &:nth-last-child(2) {
+      padding: 0 _rem(16) 0 _rem(12);
+      justify-content: flex-end;
+    }
+
+    &:nth-last-child(3) {
+      padding: 0 _rem(16);
+      justify-content: flex-end;
+    }
+
+    &:last-child {
+      position: sticky;
+      right: 0;
+    }
+  }
+
+  .potentialReturns {
+    margin-top: _rem(10);
+    text-align: end;
+    font-size: _rem(14);
+    line-height: _rem(20);
+    padding: 0 _rem(16);
+    color: #86909a;
+
+    &Value {
+      color: #009251;
+      font-weight: 700;
+    }
+  }
+
+  .rows {
+    will-change: transform;
+    direction: ltr;
+    position: relative;
+  }
+}

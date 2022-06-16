@@ -1,0 +1,34 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  @keyframes emergence {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animation {
+    animation: emergence 0.5s linear;
+  }
+
+  .stickyHeader {
+    position: absolute;
+    top: _rem(48);
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+
+    &:before {
+      position: absolute;
+      top: 100%;
+      content: '';
+      display: block;
+      height: _rem(3);
+      width: 100%;
+      background: linear-gradient(#d5dae0 0 _rem(1), #d5dae099 _rem(1) _rem(2), #d5dae04d _rem(2) _rem(3));
+    }
+  }
+}

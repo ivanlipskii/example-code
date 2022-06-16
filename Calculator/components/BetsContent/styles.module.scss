@@ -1,0 +1,16 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+.main {
+  position: relative;
+  flex-grow: 1;
+}
+
+.fake {
+  position: absolute;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}

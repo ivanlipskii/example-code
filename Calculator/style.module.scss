@@ -1,0 +1,17 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  .page {
+    position: relative;
+    z-index: 10;
+  }
+  .selections {
+    margin-bottom: _rem(24);
+  }
+  .content {
+    -webkit-overflow-scrolling: auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+}

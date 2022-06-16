@@ -1,0 +1,102 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  .coupon {
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 _rem(1) #d5dae0;
+    font-size: _rem(16);
+    transition: background-color 0.15s, opacity 0.15s;
+
+    &--inactive {
+      position: relative;
+      pointer-events: none;
+      touch-action: none;
+      cursor: default;
+
+      &:before {
+        @extend %full-wh-absolute;
+        height: calc(100% - #{_rem(1)});
+        bottom: _rem(1);
+        content: '';
+        background-color: #ffffff;
+        opacity: 0.75;
+        z-index: 1;
+      }
+    }
+  }
+
+  .inner {
+    @extend %flex-item;
+  }
+
+  .index {
+    padding: _rem(14) 0 _rem(13) _rem(13);
+
+    &Value {
+      font-size: _rem(14);
+      line-height: _rem(16);
+      color: #000000;
+      min-width: _rem(16);
+      text-align: center;
+    }
+  }
+
+  .about {
+    @extend %flex-column;
+    min-width: 0;
+    padding: _rem(13) _rem(8) _rem(16) _rem(16);
+    flex-grow: 1;
+    color: #86909a;
+    padding-left: _rem(11);
+  }
+
+  .static-icn {
+    width: _rem(20);
+    height: _rem(20);
+    margin-top: _rem(3);
+
+    &--win {
+      fill: #00a057;
+    }
+
+    &--lose {
+      fill: #ef4048;
+    }
+
+    &--unknown {
+      fill: transparent;
+    }
+  }
+
+  .won {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: _rem(1);
+    color: #000000;
+  }
+
+  .aside {
+    @extend %flex-column;
+    flex-shrink: 0;
+    max-width: _rem(207);
+    min-width: _rem(130);
+    width: _pcw(142, 375);
+    padding: _rem(13) _rem(16) _rem(16) _rem(8);
+    width: auto;
+  }
+
+  .tools {
+    @extend %flex-item;
+    margin-bottom: _rem(14);
+  }
+
+  .price {
+    flex-grow: 1;
+    text-align: right;
+    margin: 0 _rem(16) 0 0;
+    flex: 1;
+  }
+}

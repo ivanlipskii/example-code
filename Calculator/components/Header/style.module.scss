@@ -1,0 +1,55 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  .resizeHeader {
+    overflow: hidden;
+    font-size: 14px;
+    width: 100%;
+    transition: opacity 0.5s linear;
+  }
+  .hidden {
+    opacity: 0;
+  }
+  .head {
+    display: flex;
+    padding: _rem(24) _rem(16) _rem(22);
+    line-height: _rem(20);
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+    min-width: fit-content;
+  }
+  .headLeft {
+    max-width: 50%;
+    padding-right: _rem(5);
+    flex: 1;
+  }
+  .headRight {
+    flex-shrink: 0;
+    padding-left: _rem(5);
+  }
+  .type {
+    font-weight: bold;
+    margin-bottom: _rem(6);
+  }
+
+  .option {
+    color: #86909a;
+    text-align: right;
+  }
+  .optionValue {
+    font-weight: 700;
+    color: #000000;
+  }
+  .optionValueGreen {
+    color: #009251;
+  }
+  .small {
+    font-size: _rem(12);
+
+    .head {
+      padding: _rem(11) _rem(16) _rem(12);
+      line-height: _rem(16);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  .row {
+    @extend %full-wh-absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-bottom: _rem(1) solid #d5dae0;
+
+    &:before {
+      content: '';
+      @extend %full-wh-absolute;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), #fff);
+    }
+  }
+
+  .icon {
+    position: relative;
+    margin-top: auto;
+  }
+
+  .note {
+    position: relative;
+    color: #86909a;
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: auto;
+  }
+}

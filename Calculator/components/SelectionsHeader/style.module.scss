@@ -1,0 +1,42 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  .header {
+    background-color: #f6f7f8;
+    padding: _rem(6) 0;
+    display: flex;
+    font-size: _rem(12);
+    line-height: _rem(16);
+    color: #86909a;
+    border-top: _rem(1) solid #d5dae0;
+    border-bottom: _rem(1) solid #d5dae0;
+  }
+  .index {
+    flex: 0 0 _rem(29);
+    max-width: _rem(29);
+    padding-left: _rem(19);
+  }
+  .info {
+    flex: 1;
+    padding: 0 _rem(8) 0 _rem(11);
+  }
+  .tools {
+    padding: 0 _rem(8) 0 _rem(11);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    max-width: _rem(207);
+    min-width: _rem(130);
+    padding: 0 _rem(16) 0 _rem(8);
+  }
+  .coeff {
+    flex-grow: 1;
+    text-align: right;
+    margin-right: _rem(16);
+  }
+  .state {
+    text-align: center;
+    flex-shrink: 0;
+    min-width: _rem(37);
+  }
+}

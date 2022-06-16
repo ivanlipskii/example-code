@@ -1,0 +1,18 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  .selector {
+    display: block;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  .title {
+    font-weight: bold;
+    margin-bottom: _rem(6);
+  }
+
+  .field {
+    margin-top: _rem(6);
+  }
+}

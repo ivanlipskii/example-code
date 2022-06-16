@@ -1,0 +1,53 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  .info {
+    background: #f6f7f8;
+    border: _rem(1) solid #d5dae0;
+    box-sizing: border-box;
+    border-radius: _rem(4);
+    padding: _rem(20);
+    margin: 0 _rem(16);
+  }
+  .item {
+    position: relative;
+    display: flex;
+    margin-bottom: _rem(7);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .dot {
+    border-bottom: _rem(1) dotted #86909a;
+    position: absolute;
+    bottom: _rem(2);
+    left: 0;
+    right: 0;
+  }
+
+  .label {
+    font-size: _rem(14);
+    line-height: _rem(16);
+    background: #f6f7f8;
+    position: relative;
+    padding-right: _rem(4);
+  }
+
+  .value {
+    position: relative;
+    margin-left: auto;
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: _rem(14);
+    line-height: _rem(16);
+    color: #000000;
+    background: #f6f7f8;
+    padding-left: _rem(4);
+  }
+
+  .valueGreen {
+    color: #009251;
+  }
+}

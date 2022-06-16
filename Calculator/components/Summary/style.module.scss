@@ -1,0 +1,41 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  .summary {
+    padding-bottom: _rem(44);
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    margin-bottom: _rem(10);
+    padding: 0 _rem(16);
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: _rem(14);
+    line-height: _rem(20);
+    margin-right: _rem(5);
+  }
+  .update {
+    font-size: 0;
+    cursor: pointer;
+  }
+  .loading {
+    :global {
+      animation: rotate-360 1s infinite linear;
+    }
+  }
+  .updateIcon {
+    width: _rem(16);
+    height: _rem(14);
+  }
+
+  .more {
+    font-size: _rem(14);
+    line-height: _rem(20);
+    color: #065da0;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}

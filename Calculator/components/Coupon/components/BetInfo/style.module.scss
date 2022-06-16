@@ -1,0 +1,41 @@
+@import '~root/assets/assets-web/styles/utils/lib';
+
+:local {
+  .info {
+    position: relative;
+    flex-grow: 1;
+    min-width: 0;
+    margin: auto 0;
+    color: #000000;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: _rem(14);
+    line-height: (16/14);
+  }
+
+  .descr {
+    @include multi-ellipsis(2, (16/12));
+    color: #333333;
+    margin-top: _rem(4);
+    font-size: _rem(12);
+    line-height: (16/12);
+  }
+
+  .banker {
+    display: inline-flex;
+    position: relative;
+    width: _rem(12);
+    height: _rem(11);
+    fill: #a0a8b1;
+    top: _rem(1);
+  }
+
+  .break::after {
+    content: ' ';
+    font-size: 0;
+    line-height: 0;
+    padding-left: _rem(4);
+  }
+}
